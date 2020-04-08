@@ -1,0 +1,10 @@
+body {background-color:#421858;}
+		h1 {color:white; font-family:courier,arial,helvetica; text-align:center;}
+		p {color:white; font-family:courier,arial,helvetica; text-align:center;}
+		.logoimg {
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;  
+		}
+		a {color:white; font-family:courier,arial,helvetica;}
+		a:hover {color:red;}
