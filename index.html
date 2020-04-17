@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="indexs.js"></script>
 </head>
+<!--navigation bar-->
 <body>
 	<div class="topnav" id="myTopnav">
 		<div class="logo">
@@ -23,6 +24,31 @@
 		<a href="#Blog" class="link">Blog</a>
 		<a href="#home" class="link"w>Home</a>
 	</div>
+<!--end of navigation bar-->
+
+<!--welcome banner-->
+<div class="w3-content">
+ <img class="mySlides" src="https://i.imgur.com/ZtdhrUA.jpg" alt="custom_html_banner1" style="width:100%">
+ <img class="mySlides" src="banner.jpg" alt="custom_html_banner2" style="width:100%">
+ <img class="mySlides" src="https://i.imgur.com/ZtdhrUA.jpg" alt="custom_html_banner3" style="width:100%">
+ <img class="mySlides" src="https://i.imgur.com/ZtdhrUA.jpg" alt="custom_html_banner4" style="width:100%">
+ <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+ <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<script type="text/javascript">
+	var slideIndex = 1;
+ showDivs(slideIndex);
+ function plusDivs(n) {
+ showDivs(slideIndex += n);
+  }
+ function showDivs(n) {
+ var i;
+ var x = document.getElementsByClassName("mySlides");
+ if (n > x.length) {slideIndex = 1} if (n < 1) {slideIndex = x.length}for
+ (i = 0; i < x.length; i++) {x[i].style.display = "none";}
+ x[slideIndex-1].style.display = "block"; }
+</script>
+<!--end of welcome banner-->
 </body>
 </html>
 
