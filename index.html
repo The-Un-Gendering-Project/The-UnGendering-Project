@@ -5,45 +5,45 @@
 	The (Un)gendering Project
 	</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comfortaa:wght@500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--font awesome script-->
+	<script src="https://kit.fontawesome.com/b8ab98ac57.js" crossorigin="anonymous"></script>
+
 	<script src="indexs.js"></script>
 </head>
 <!--navigation bar-->
 <body>
-	<div class="topnav" id="myTopnav">
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    	<i class="fa fa-bars"></i>
-  		</a>
-  		<a href="#home" class="link"w>Home</a>
-  		<a href="#Blog" class="link">Blog</a>
-		<a href="#About" class="link">About</a>
-	</div>
+	<header>
+		<div class="logo">
+			<h1 class="logo-text">The<span>(Un)Gendering</span>Project</h1>
+		</div>
+		<i class="fa fa-bars menu-toggle"></i>
+		<ul class="nav">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#signup">Services</a></li>
+			<!--<li><a href="#signup">Sign up</a></li>
+			<li><a href="#login">Login</a></li>-->
+			<li>
+				<a href="#">
+					<i class="fa fa-user"></i>
+				LOL
+					<i class="fa fa-chevron-down" ></i>
+				</a>
+				<ul>
+					<li><a href="#home">Dashboard</a></li>
+					<li><a href="#about" class="logout">Logout</a></li>
+				</ul>
+			</li>
+  		</ul>
+	</header>
 <!--end of navigation bar-->
+<!--JQuery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 
-<!--welcome banner-->
-<div class="w3-content">
- <img class="mySlides" src="images/banner.jpg" alt="custom_html_banner2" style="width:100%">
- <img class="mySlides" src="images/banner2.jpg" alt="custom_html_banner3" style="width:100%">
- <img class="mySlides" src="images/banner3.jpg" alt="custom_html_banner4" style="width:100%">
- 
- <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
- <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-</div>
-<script type="text/javascript">
-	var slideIndex = 1;
- showDivs(slideIndex);
- function plusDivs(n) {
- showDivs(slideIndex += n);
-  }
- function showDivs(n) {
- var i;
- var x = document.getElementsByClassName("mySlides");
- if (n > x.length) {slideIndex = 1} if (n < 1) {slideIndex = x.length}for
- (i = 0; i < x.length; i++) {x[i].style.display = "none";}
- x[slideIndex-1].style.display = "block"; }
-</script>
-<!--end of welcome banner-->
+<!--Custom Script-->
+<script src="js/scripts.js"></script>
 </body>
 </html>
 

@@ -1,82 +1,128 @@
-
+* {
+	box-sizing: border-box;
+}
 body{
+	padding: 0;
 	margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+	background-color: #f6f6f6;
+  font-family:'Comfortaa', cursive;
 }
-.topnav{
-	background-color: red;
-	overflow: hidden;
-	padding: 20px;
-	text-align: center;
+header{
+	background-color: #008489;
+	height: 66px;
 }
-.topnav a {
-  color: white;
-  text-align: center;
-  padding: 20px 18px;
-  text-decoration: none;
-  font-size: 19px;
-  font-family: "Lucida Console", Courier, monospace;
+header *{
+	color: white;
 }
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+header .logo{
+	float: left;
+	height: inherit;
+	margin-left: 2em;
 }
-
-.topnav .icon {
-  display: none;
+header .logo-text{
+	margin:9px;
+	font-family: 'Bangers', cursive;
 }
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child){display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
+header .logo-text span{
+	color: #05f0ff;
 }
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a.link {
-    float: right;
-    display: block;
-    text-align: right;
-  }
+header ul{
+	float: right;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
 }
-.w3-content{position:relative;
-	margin-top:0em;}
-.w3-btn,.w3-button{border:none;
-	display:inline-block;
-	outline:0;padding:8px 16px;
-	vertical-align:middle;
-	overflow:hidden;
-	text-decoration:none;
-	color:inherit;
-	background-color:inherit;
-	text-align:center;
-	cursor:pointer;
-	white-space:nowrap}
-.w3-btn,.w3-button{-webkit-touch-callout:none;
-	-webkit-user-select:none;
-	-khtml-user-select:none;
-	-moz-user-select:none;
-	-ms-user-select:none;
-	user-select:none} 
-.w3-disabled,.w3-btn:disabled,.w3-button:disabled{cursor:not-allowed;opacity:0.3}.w3-disabled *,:disabled *{pointer-events:none}
-.w3-bar-block .w3-dropdown-hover .w3-button,.w3-bar-block .w3-dropdown-click .w3-button{width:100%;text-align:left;padding:8px 16px}
-.w3-button:hover{color:#000!important;background-color:#ccc!important}
-
-.w3-content button {
-position: absolute;
-top: 32%;
+header ul li{
+	float: left;
+	position: relative;
+}
+header ul li ul {
+	position: absolute;
+	top: 66px;
+	right: 0px;
+	width: 180px;
+	display: none;
+}
+header ul li:hover ul {
+	display: block;
+}
+header ul li ul li{
+	width: 100%;
+}
+header ul li a i {
+	font-size: 0.8em;
+}
+header ul li ul li a{
+	padding: 10px;
+	background-color: white;
+	color: #444;
 }
 
-.w3-display-right {right:0}
-.w3-display-left {left:0}
-@media screen and (max-width: 600px){
-	.w3-content{
-		display: none;
+header ul li ul li a.logout{
+	color: red;
+
+}
+header ul li ul li a:hover{
+	background-color: #d5d6d6;
+}
+header ul li a{
+	display: block;
+	padding: 21px;
+	font-size: 1.1em;
+	text-decoration: none;
+}
+header ul li a:hover{
+	background-color: #006669;
+	transition: 0.5s;
+}
+header .menu-toggle{
+	display: none;
+}
+
+/* Media queries*/
+
+@media only screen and (max-width: 750px){
+	header {
+		position: relative;
 	}
+	header ul{
+		width: 100%;
+		background-color: #0e94a0;
+		max-height: 0px;
+		overflow: hidden;
+	}
+	.showing {
+		max-height: 100em;
+	}
+	header ul li{
+		width: 100%;
+	}
+	header ul li ul{
+		position: static;
+		display: block;
+		width: 100%;
+	}
+	header ul li ul li a{
+	padding: 10px;
+	background-color: #0e94a0;
+	color: white;
+	padding-left: 50px;
+	}
+	header ul li ul li a:hover{
+		background-color: #006669;
+	}
+	header ul li ul li a.logout{
+	color: red;
+	}
+	header .menu-toggle{
+		display: block;
+		position: absolute;
+		right: 20px;
+		top: 10px;
+		font-size: 1.5em;
+	}
+	header .logo{
+	margin-left: 0.5em;
+}
+
 }
