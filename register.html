@@ -1,0 +1,84 @@
+<DOCTYPE html> 
+<html>
+<head>
+	<title>
+	Register
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<!--font awesome script-->
+	<script src="https://kit.fontawesome.com/b8ab98ac57.js" crossorigin="anonymous"></script>
+
+	<script src="indexs.js"></script>
+</head>
+<!--navigation bar-->
+<body>
+	<header>
+		<div class="logo">
+			<h1 class="logo-text">The<span>(Un)Gendering</span>Project</h1>
+		</div>
+		<i class="fa fa-bars menu-toggle"></i>
+		<ul class="nav">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#signup">Services</a></li>
+			<!--<li><a href="#signup">Sign up</a></li>
+			<li><a href="#login">Login</a></li>-->
+			<li>
+				<a href="#">
+					<i class="fa fa-user"></i>
+				LOL
+					<i class="fa fa-chevron-down" ></i>
+				</a>
+				<ul>
+					<li><a href="#home">Dashboard</a></li>
+					<li><a href="#about" class="logout">Logout</a></li>
+				</ul>
+			</li>
+  		</ul>
+	</header>
+<!--end of navigation bar-->
+
+<div class="auth-content">
+	
+	<form action="register.html" method="post">
+		<h2 class="form-title">Register</h2>
+
+		<!--<div class="msg success error">
+			<li>Username required</li>
+		</div>-->
+
+		<div>
+			<label>Username</label>
+			<input type="text" name="username" class="text-input">
+		</div>
+		<div>
+			<label>Email</label>
+			<input type="text" name="email" class="text-input">
+		</div>
+		<div>
+			<label>Password</label>
+			<input type="password" name=password" class="text-input">
+		</div>
+		<div>
+			<label>Password Confirmation</label>
+			<input type="password" name=passwordConf" class="text-input">
+		</div>
+		<div>
+			<button type="submit" name="register-btn" class="btn btn-big">Register</button>
+		</div>
+		<p>Or <a href="login.html">Sign In</a></p>
+
+	</form>
+
+</div>
+
+<!--JQuery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+<!--Custom Script-->
+<script src="js/scripts.js"></script>
+</body>
+</html>
+

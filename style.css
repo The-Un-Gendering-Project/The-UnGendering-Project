@@ -27,6 +27,7 @@ a {
 	color: white;
 	border: 1px solid transparent;
 	border-radius: 0.2rem;
+	font-size: 1.08em;
 }
 .btn-big{
 	padding: .7rem 1.3rem;
@@ -47,6 +48,25 @@ a {
 	font-size: 1.2em;
 	font-family: 'Comfortaa', cursive;
 }
+
+.msg{
+	width: 100%;
+	margin: 5px auto;
+	padding: 8px;
+	border-radius: 5px;
+	list-style-type: none;
+}
+.success{
+	color: #3a6e3a;
+	border: 1px solid #3a6e3a;
+	background-color: #bcf5bc;
+}
+.error{
+	color: #884b4b;
+	border: 1px solid #884b4b;
+	background-color: #f5bcbc;
+}
+
 /*navbar*/
 header{
 	background-color: #008489;
@@ -295,6 +315,27 @@ header .menu-toggle{
 	padding-left: 10px;
 	transition: all 0.3s;
 	color: #006669;
+}
+/*Auth Pages*/
+
+.auth-content{
+	width: 30%;
+	margin: 50px auto;
+	padding: 20px;
+	background: white;
+	border-radius: 5px;
+}
+.auth-content .form-title{
+	text-align: center;
+}
+.auth-content form div{
+	margin-bottom: 10px;
+}
+.auth-content form p{
+	text-align: center;
+}
+.auth-content form p a{
+	text-decoration: underline;
 }
 
 /*Footer*/
